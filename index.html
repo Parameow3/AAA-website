@@ -61,9 +61,52 @@
 <main>
 
     <!--  Header  -->
-    <header class="header_wrapper ">
+    <header class="container-fluid px-0">
         <!--  Banner carousel -->
-        <h1>Home</h1>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000"
+                     style="height: 500px">
+                    <img src="asset/img/taekwondo.png" class="d-block w-100"
+                         style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                         alt="Wild Landscape"/>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500"
+                     style="height: 500px">
+                    <img src="asset/img/ballet.jpeg" class="d-block w-100"
+                         style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit:cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                         alt="Camera"/>
+                </div>
+                <div class="carousel-item"
+                     style="height: 500px">
+                    <img src="asset/img/robotic.JPG" class="d-block w-100"
+                         style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                         alt="Exotic Fruits"/>
+                </div>
+
+                <!--      carousel description      -->
+                <div class="carousel-caption top-0 bottom-0 start-0 end-0 bg-black bg-opacity-50">
+                    <h1 class="mt-5" style="font-size: 42px; font-weight: 800;">
+                        Inspire the
+                        <br>
+                        Next Generation of
+                        <br>
+                        Genius Kids
+                    </h1>
+                    <p class="pt-2" style="font-size: 16px; font-weight: 400;">
+                        The fun and exciting way to learn Science,
+                        <br>
+                        Technology, Robotic & Math!
+                    </p>
+
+                    <button class="btn btn-danger rounded-3 p-3 mt-4  fs-3 fw-bold">
+                        Find a Branch Near You!
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
     </header>
     <!--  Exit Header  -->
 
