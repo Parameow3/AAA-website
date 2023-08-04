@@ -2,8 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--  AAA ICON and TITLE  -->
     <title>AUTHENTIC ADVANCE ACADEMY</title>
@@ -20,48 +19,98 @@
     <script src="asset/index.js"></script>
 
 </head>
-<body class="container">
+<body>
 <!-- Navbar section -->
-<header class="header_wrapper ">
-    <nav class="navbar navbar-expand-lg fixed-top ps-lg-5 pe-lg-5 shadow-sm mb-1 bg-body rounded" style="background-color: #ffffff;">
-        <div class="container-fluid ps-xl-5 pe-xl-5 ">
-            <a class="navbar-brand " href="#">
-                <img src="asset/img/aaa-logo.png"
-                     width="81px" class="img-fluid ms-xl-5" alt="logo"/>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-lg ps-xxl-5 pe-lg-5 shadow-sm bg-body rounded pt-0 pb-0">
+    <div class="container-fluid ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5">
+        <a class="navbar-brand ms-xxl-5" href="index.html">
+            <img src="asset/img/aaa-logo.png"
+                 width="81px" class="img-fluid ms-xxl-5" alt="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!--      Update Bold each Selected menu      -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item ms-3">
-                        <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link fs-6" href="program.html">Program</a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link fs-6" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item dropdown ms-3">
-                        <a class="nav-link fs-6" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown ms-3">
-                        <a class="nav-link fs-6" href="location.html">Location</a>
-                    </li>
-                </ul>
-            </div>
-
-
+        <!--      Update Bold each Selected menu      -->
+        <div class="collapse navbar-collapse justify-content-end me-xl-5" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-3">
+                    <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link fs-6" href="program.html">Program</a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a class="nav-link fs-6" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item dropdown ms-3">
+                    <a class="nav-link fs-6" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown ms-3">
+                    <a class="nav-link fs-6" href="location.html">Location</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-</header>
+    </div>
+</nav>
 <!-- Navigation section exit -->
 
 <!--  Contents  -->
+<main>
 
+    <!--  Header  -->
+    <header class="container-fluid px-0">
+        <!--  Banner carousel -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000"
+                     style="height: 500px">
+                    <img src="asset/img/taekwondo.png" class="d-block w-100"
+                         style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                         alt="Wild Landscape"/>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500"
+                     style="height: 500px">
+                    <img src="asset/img/ballet.jpeg" class="d-block w-100"
+                         style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit:cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                         alt="Camera"/>
+                </div>
+                <div class="carousel-item"
+                     style="height: 500px">
+                    <img src="asset/img/robotic.JPG" class="d-block w-100"
+                         style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                         alt="Exotic Fruits"/>
+                </div>
+
+                <!--      carousel description      -->
+                <div class="carousel-caption top-0 bottom-0 start-0 end-0 bg-black bg-opacity-50">
+                    <h1 class="mt-5" style="font-size: 39px; font-weight: 800;">
+                        Inspire the
+                        <br>
+                        Next Generation of
+                        <br>
+                        Genius Kids
+                    </h1>
+                    <p class="pt-2" style="font-size: 16px; font-weight: 400;">
+                        The fun and exciting way to learn Science,
+                        <br>
+                        Technology, Robotic & Math!
+                    </p>
+                    <button class="btn btn-danger rounded-3 p-3 mt-4  fs-3 fw-bold">
+                        Find a Branch Near You!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  Exit Header  -->
+
+    <!--  section 1  -->
+    <section>
+
+    </section>
+    <!--  Exit section 1  -->
+</main>
 </body>
 </html>
