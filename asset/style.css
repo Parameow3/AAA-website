@@ -4,9 +4,9 @@ h1{
 }
 
 .scroll-down {
-    position: absolute;
+    position: relative;
     left: 50%;
-    bottom: 18em;
+    bottom: 2em;
     display: block;
     text-align: center;
     font-size: 20px;
