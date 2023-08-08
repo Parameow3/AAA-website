@@ -11,15 +11,16 @@
 
     <!--  Bootstrap  -->
     <link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
-    <script src="asset/js/bootstrap.bundle.min.js"></script>
     <link href="asset/bootstrap-icons-1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
 
-    <!--  custom CSS and JS  -->
+    <!--  custom CSS  -->
     <link rel="stylesheet" type="text/css" href="asset/style.css">
-    <script src="asset/index.js"></script>
+
+    <!--  Scroll Animation Library  -->
+    <link rel="stylesheet" href="asset/aos-master/dist/aos.css">
 
 </head>
-<body>
+<body class="bg-white">
 <!-- Navbar section -->
 <nav class="navbar navbar-expand-lg ps-xxl-5 pe-lg-5 shadow-sm bg-body rounded pt-0 pb-0">
     <div class="container-fluid ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5">
@@ -95,24 +96,29 @@
                     <br>
                     Technology, Robotic & Math!
                 </p>
-                <button class="btn btn-danger rounded-3 p-3 mt-4  fs-3 fw-bold">
+                <button class="btn rounded-3 p-3 mt-4  fs-3 fw-bold" style="background-color: #9A3A2F; color: white">
                     Find a Branch Near You!
                 </button>
             </div>
         </div>
     </div>
+    <div class="scroll-down"></div>
 </section>
 <!--  Exit section Banner  -->
 
 <!--  section 1  -->
-<section class="m-3" id="taekwondo">
-    <div class="row text-center align-items-center justify-content-center p-xl-5"
-         style="background-image: url(asset/img/bg-s1-hp.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+<section
+        style="background-image: url(asset/img/bg-s1-hp.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
+        id="taekwondo">
+    <div data-aos="fade-up"
+         data-aos-anchor-placement="top-center"
+         data-aos-duration="1000"
+         class="row text-center align-items-center justify-content-center p-xl-5 m-2">
         <!--    Image    -->
         <div class="col-md-5 text-center p-md-2 mt-5">
             <img src="asset/img/taekwondo-class.jpeg"
-                 class="rounded-3 w-100"
-                 style="height: 512px; object-fit: cover">
+                 class="rounded-3 w-100 h-100"
+                 style=" object-fit: cover">
         </div>
         <!--    Description    -->
         <div class="col-md-5 text-sm-start mt-3 ms-2">
@@ -131,23 +137,28 @@
             <p
                     class="text-start fw-bold">Ready to learn more about our programs at <span class="text-danger">Authentic Advanced Academy</span>?
                 Explore our site and sign up today!</p>
-            <button class="text-start btn btn-success rounded-5 p-3 mt-2  fs-4 fw-bold">
+            <button class="text-start btn rounded-5 p-3 mt-2  fs-4 fw-bold mb-3"
+                    style="background-color: #9A3A2F; color: white">
                 Check Our Program Now!
             </button>
         </div>
     </div>
 </section>
 <!--  Exit section 1  -->
-<hr>
+<hr class="px-0">
 <!--  section 2  -->
-<section class="m-3" id="robotic">
-    <div class="row text-center align-items-center justify-content-center p-xl-5"
-         style="background-image: url(asset/img/bg-s2-hp.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+<section
+        style="background-image: url(asset/img/bg-s2-hp.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
+        id="robotic">
+    <div class="row text-center align-items-center justify-content-center p-xl-5 m-2"
+         data-aos="fade-up"
+         data-aos-anchor-placement="top-center"
+         data-aos-duration="1000">
         <!--    Image    -->
         <div class="order-sm-1 col-md-5 text-center p-md-2 mt-5">
             <img src="asset/img/robotic.JPG"
-                 class="rounded-3 w-100"
-                 style="height: 512px; object-fit: cover">
+                 class="rounded-3 w-100 h-100"
+                 style="object-fit: cover">
         </div>
 
         <!--    Description    -->
@@ -166,7 +177,8 @@
             <p
                     class="text-start fw-bold">Ready to learn more about our programs at <span class="text-danger">Authentic Advanced Academy</span>?
                 Explore our site and sign up today!</p>
-            <button class="text-start btn btn-success rounded-5 p-3 mt-2  fs-4 fw-bold">
+            <button class="text-start btn rounded-5 p-3 mt-2  fs-4 fw-bold mb-3"
+                    style="background-color: #529E64; color: white">
                 Check Our Program Now!
             </button>
         </div>
@@ -175,5 +187,59 @@
     </div>
 </section>
 <!--  Exit section 2  -->
+<hr class="px-0">
+<!--  section 3  -->
+<section id="dancing"
+         style="background-image: url(asset/img/bg-s3-hp.png); background-color: white; background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <div data-aos="fade-up"
+         data-aos-anchor-placement="top-center"
+         data-aos-duration="1000"
+         class="row text-center align-items-center justify-content-center p-xl-5 m-2">
+        <!--    Image    -->
+        <div class="col-md-5 text-center p-md-2 mt-5">
+            <img src="asset/img/balletDance.jpg"
+                 class="rounded-3 w-100 h-100"
+                 style="object-fit: cover">
+        </div>
+        <!--    Description    -->
+        <div class="col-md-5 text-sm-start mt-3 ms-2">
+            <p style="color: #529E64;" class="fs-5 text-start fw-bold">Dancing Class</p>
+            <h1
+                    class="text-start fw-bold">Ballet Dance</h1>
+            <p
+                    class="text-start">
+                Welcome to our dancing class! Our class is designed for dancers of all levels, from beginners to
+                advanced. We offer a variety of dance styles, including ballet, jazz, hip-hop, and contemporary. Our
+                experienced instructors will guide you through the fundamentals of each style and help you develop your
+                technique and confidence on the dance floor.
+            </p>
+            <p
+                    class="text-start fw-bold">Ready to learn more about our programs at <span class="text-danger">Authentic Advanced Academy</span>?
+                Explore our site and sign up today!</p>
+            <button class="text-start btn rounded-5 p-3 mt-2  fs-4 fw-bold mb-3"
+                    style="background-color: #9A3A2F; color: white">
+                Check Our Program Now!
+            </button>
+        </div>
+    </div>
+</section>
+<!--  Exit section 3  -->
+<hr class="px-0">
+
+<!--  section 4  -->
+
+
+<!--  Exit section 4  -->
+
+<!-- Bootstrap JS -->
+<script src="asset/js/bootstrap.bundle.min.js"></script>
+<!--  custom JS  -->
+<script src="asset/index.js"></script>
+<!-- Here we hook our AOS JS file  -->
+<script src="asset/aos-master/dist/aos.js"></script>
+<!-- Activate AOS Library -->
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
