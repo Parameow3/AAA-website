@@ -1,0 +1,42 @@
+/* About css */
+h1{
+    text-align: center;
+}
+.centered{
+    
+    position: absolute;
+    top:90%;
+    left: 30%;
+}
+
+.backgroundpic{
+    width: 391px;
+    height: 360px;
+   
+    
+    
+    
+}
+.inner {
+    position: absolute;
+    top: 20;
+  }
+
+.float-start{
+    padding-left: 55px;
+}
+
+
+/* section 2 for the President */
+.masthead{
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0,.2);
+}
+.president{
+    
+    position: absolute;
+    font-size: 1rem;
+}
