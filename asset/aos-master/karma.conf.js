@@ -11,7 +11,6 @@ module.exports = function(config) {
     frameworks: ['jasmine-jquery', 'jasmine'],
 
     files: [
-      'node_modules/babel-polyfill/dist/polyfill.js',
       'test/index.js',
       {
         pattern: 'test/fixtures/**/*.html',
