@@ -18,7 +18,7 @@
   <!--  custom CSS and JS  -->
   <link rel="stylesheet" type="text/css" href="asset/style.css">
   <script src="asset/index.js"></script>
-
+  <link rel="stylesheet" href="asset/stylelacation.css">
 </head>
 
 <body>
@@ -60,98 +60,150 @@
   <!--  Contents  -->
   <main>
 
-    <!--  Header  -->
-    <header class="header_wrapper ">
+    <!--  Banner carousel -->
+    <div class="banner-content container-fluid px-0">
+
       <!--  Banner carousel -->
-      <div class="banner-content">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000" style="height: 400px">
+            <img src="asset/img/Fun mall.jfif" class="d-block w-100"
+              style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              alt="Wild Landscape" />
+          </div>
+          <div class="carousel-item" data-bs-interval="2500" style="height: 400px">
+            <img src="asset/img/Peng Hout.png" class="d-block w-100"
+              style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit:cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              alt="Camera" />
+          </div>
+          <div class="carousel-item" style="height: 400px">
+            <img src="asset/img/OCIC.png" class="d-block w-100"
+              style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              alt="Exotic Fruits" />
+          </div>
 
-        <header class="container-fluid px-0">
-          <!--  Banner carousel -->
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000" style="height: 400px">
-                <img src="asset/img/Fun mall.jfif" class="d-block w-100"
-                  style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                  alt="Wild Landscape" />
+          <!--      carousel description      -->
+          <div class="carousel-caption top-0 bottom-0 start-0 end-0 bg-black bg-opacity-50">
+            <h1 class="mt-5" style="padding-top: 60px; font-size: 75px; font-weight: 800;">
+              AAA
+            </h1>
+            <p class="pt-2" style=" font-size: 16px; font-weight: 700;">
+              Authentic Advance Academy
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- -------- -->
+    </div>
+    <!-- About Locaiton -->
+    <section>
+      <div class="row text-center" style="background-color: #303F4F;">
+        <div class="col  text-white fs-2 text-center pt-5 ps-3 pb-5">
+          Our Learning
+          <br>
+          Center Location
+        </div>
+        <div class="col-sm-5">
+          <div class="row p-4 text-center" style="background-color: #273748;">
+            <div class="col text-white fs-5 pb-3">
+              Fun Mall, 3rd Floor, St315, Khan Toul Kork, Phnom Penh, Cambodia
+              <div class="number">
+                (+855) 12 202 005
               </div>
-              <div class="carousel-item" data-bs-interval="2500" style="height: 400px">
-                <img src="asset/img/Peng Hout.png" class="d-block w-100"
-                  style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit:cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                  alt="Camera" />
+              <button class="btn rounded-1 mt-3" style="background-color:#529E64 ; color: white;">
+                Get Direction
+              </button>
+            </div>
+            <div class="vr px-0 me-3 mt-3 mb-3 text-white d-none d-sm-block" style="width: 2px;"> </div>
+            <div class="col-sm-5 text-white">
+              <div class="fw-bold fs-5 ">
+                Business Hours
               </div>
-              <div class="carousel-item" style="height: 400px">
-                <img src="asset/img/OCIC.png" class="d-block w-100"
-                  style="inset: 0; box-sizing: border-box; padding: 0; border: medium none; margin: auto; display: block;object-fit: cover; height: 0; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
-                  alt="Exotic Fruits" />
+              <div class="pt-2">
+                Monday - Sunday : 9:00 AM - 5:00 PM
               </div>
-
-              <!--      carousel description      -->
-              <div class="carousel-caption top-0 bottom-0 start-0 end-0 bg-black bg-opacity-50">
-                <h1 class="mt-5" style="padding-top: 60px; font-size: 75px; font-weight: 800;">
-                  AAA
-                </h1>
-                <p class="pt-2" style=" font-size: 16px; font-weight: 700;">
-                  Authentic Advance Academy
-                </p>
+              <div class="p-3 fs-5">
+                <i class="p-2 bi bi-facebook"></i>
+                <i class="p-2 bi bi-telegram"></i>
+                <i class="p-2 bi bi-envelope-at-fill"></i>
+                <i class="p-2 bi bi-twitter"></i>
+                <i class="p-2 bi bi-youtube"></i>
               </div>
             </div>
           </div>
-          <!-- -------- -->
+        </div>
       </div>
-      <!-- About Locaiton -->
-      <section class="location">
-          <div class="d-flex bd-highlight " style="background-color: #303F4F; padding-right: 16em;">
-            <div class="col text-white fs-2 mt-5 mb-5 text-sm-center">Our Learning
-              <div class=""> Center Location</div>
+    </section>
+    <!-- detail location -->
+    <section>
+      <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000"
+        class="row text-center align-items-center justify-content-center p-xl-5 m-2">
+        <!--    Image    -->
+        <div class="col-md-5 text-center p-md-2 mt-1">
+          <img src="asset/img/Fun mall.jfif" class=" w-100 h-100" style=" height: 601px; object-fit: cover;">
+        </div>
+        <!--    Description    -->
+        <div class="col-md-5 text-sm-start mt-4 ms-1 ">
+          <h1 class="text-start fw-bold fs-3">FUN MALL, 3RD FLOOR</h1>
+          <h2 class="text-start fs-5"> Street 315, Khan Toul Kork, <br>Phnom Penh</h2>
+          <div class="text-start fs-5 fw-bold ">(885) 12-202-005
+            <button class="btn rounded-4 p-2 mt-2 fs-6 fw-bold text-white mb-3 ms-3" style="background-color: #0088CC;">
+              <i class="p-1 bi-telegram "></i>Telegram
+            </button>
+          </div>
+          <div class="row text-sm-start">
+            <div class="col text-start">
+              <p><iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.3197391661283!2d104.89319377119817!3d11.577682161396533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095192d40c88f7%3A0x692dd1cb3142991b!2sAuthentic%20Advanced%20Academy%20(AAA)!5e0!3m2!1skm!2skh!4v1691477858773!5m2!1skm!2skh"
+                  width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+            <div class="col text-sm-start ps-3">
+              <hr>
+              <div class="text-center fs-5 fw-bold pb-2">
+                OPEN-CLOSING
               </div>
-            <div class="col fs-6 text-center me-5 me-5">
-              <div class="row h-100 text-white"style="background-color: #273748;">
-                <div class="col mt-4 ms-5 text-start fs-5">
-                  Fun Mall, 3rd Floor, St315, Khan Toul Kork, Phnom Penh, Cambodia 
-                  <div class="mt-1 fw-bolder">
-                    (+855) 12 202 005
+              <div class="row">
+                <hr>
+                <div class="row mt-3">
+                  <div class=" col fs-6 fw-bold">
+                    MON - SAT:
                   </div>
-                  <button class="btn rounded-1 mt-3" style="background-color:#529E64 ; color: white;">
-                    Get Direction
-                  </button>
-                </div>  
-                 
-                  <div class="vr px-0 me-3 mt-3 mb-3 " style="width: 2px;"> </div>  
-                          
-                <div class="col mt-4 me-lg-5 text-start ">
-                  <div class="fs-5 active fw-bolder">
-                  Business Hours
-                </div>
-                  <div class="fs-5 mt-2">
-                    Monday - Sunday : 9:00 AM - <br>
-                    5:00 PM 
-                </div>
-                <div class="mt-3 fs-4">
-                  <i class="p-2 bi bi-facebook"></i>
-                  <i class="p-2 bi bi-telegram"></i>
-                  <i class="p-2 bi bi-envelope-at-fill"></i>
-                  <i class="p-2 bi bi-twitter"></i>
-                  <i class="p-2 bi bi-youtube"></i>
-
-                </div>
+                  <div class="col text-center  fw-bold">
+                    9AM - 5PM
                   </div>
+                </div>
 
-
+                <div class="row mt-3">
+                  <div class=" col fs-6 fw-bold">
+                    SUN:
+                  </div>
+                  <div class="col text-center  fw-bold pb-3">
+                    9AM - 5PM
+                  </div>
+                </div>
+                <hr>
+                <div class="row mt-3 text-center ms-1">
+                  <div class="col text-start">
+                    <button
+                      class="btn-outline-dark rounded-4 p-2 mt-1 fs-6 fw-bold text-black text-center ps-2 pt-2 pb-2">
+                      Contact Us
+                    </button>
+                  </div>
+                  <div class="col text-start">
+                    <button
+                      class="btn btn-success rounded-4 p-3 mt-2 fs-6 fw-bold text-black text-center ps-2 pt-2 pb-2 mt-2 ms-2 "
+                      style="background-color: #529E64;">
+                      Get Direction
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>  
-        <!-- -------- -->
-      </section>
-      <!-- detail location -->
-      
-
-      </div>
-    </header>
+    </section>
+    </div>
     <!-- <-------->
     </div>
-    </header>
-    <!--  Exit Header  -->
-
     <!--  section 1  -->
     <section>
       <link rel="stylesheet" href="owl.carousel.min.css">
@@ -162,8 +214,8 @@
     <!--  Exit section 1  -->
   </main>
 
-		
-</main>
+
+  </main>
 </body>
 
 </html>
