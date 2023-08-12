@@ -19,42 +19,64 @@
     <!--  Scroll Animation Library  -->
     <link rel="stylesheet" href="asset/aos-master/dist/aos.css">
 
+    <!-- /* ============ desktop view ============ */ -->
+    <style>
+        @media all and (min-width: 992px) {
+	        .navbar .nav-item .dropdown-menu{ display: none; }
+	        .navbar .nav-item:hover .nav-link{   }
+	        .navbar .nav-item:hover .dropdown-menu{ display: block; }
+	        .navbar .nav-item .dropdown-menu{ margin-top:0; }
+        }
+    </style>
+    <!-- /* ============ desktop view .end// ============ */ -->
 </head>
 <body class="bg-white">
 <!-- Navbar section -->
-<nav class="navbar navbar-expand-lg ps-xxl-5 pe-lg-5 shadow-sm bg-body rounded pt-0 pb-0">
-    <div class="container-fluid ps-xxl-5 pe-xxl-5 ms-xxl-5 me-xxl-5">
-        <a class="navbar-brand ms-xxl-5" href="index.html">
-            <img src="asset/img/aaa-logo.png"
-                 width="81px" class="img-fluid ms-xxl-5" alt="logo"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!--      Update Bold each Selected menu      -->
-        <div class="collapse navbar-collapse justify-content-end me-xl-5" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item ms-3">
-                    <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ms-3">
-                    <a class="nav-link fs-6" href="program.html">Program</a>
-                </li>
-                <li class="nav-item ms-3">
-                    <a class="nav-link fs-6" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link fs-6" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link fs-6" href="location.html">Location</a>
-                </li>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg ps-lg-5 pe-lg-5 shadow-sm bg-body rounded" style="background-color: #ffffff;">
+    <div class="container-fluid ps-xl-5 pe-xl-5 ">
+      <a class="navbar-brand ms-xxl-5" href="index.html">
+        <img src="asset/img/aaa-logo.png"
+          width="81px" class="img-fluid ms-xxl-5" alt="logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--      Update Bold each Selected menu      -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item ms-3">
+            <a class="nav-link active fw-bolder fs-6" href="/" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link fs-6" href="program.html">Program</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link fs-6" href="gallery.html">Gallery</a>
+          </li>
+  
+          <!-- About dropdown hover section  -->
+          <!-- <li class="nav-item dropdown ms-3">
+            <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="about.html">About Us</a>
+          </li> -->
+          <li class="nav-item dropdown ms-3">
+          <a class="nav-link dropdown-toggle fs-6" href="about.html">  About Us  </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html#president"> President Message </a></li>
+                <li><a class="dropdown-item" href="about.html#vission&mission"> Mission & Vision </a></li>
+                <li><a class="dropdown-item" href="about.html#Partnership"> Our Partner </a></li>
+          <li><a class="dropdown-item" href="about.html#managementteam"> Management Team </a></li>
+              </ul>
+          </li></li>
+  
+          <!-- End here  -->
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link fs-6" href="location.html">Location</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
 <!-- Navigation section exit -->
 
 <!--  Contents  -->
