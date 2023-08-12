@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- Head section  -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
@@ -20,42 +21,70 @@
     <link rel="stylesheet" type="text/css" href="asset/style.css">
     <script src="asset/index.js"></script>
 
+    <!-- /* ============ desktop view ============ */ -->
+    <style>
+        @media all and (min-width: 992px) {
+	        .navbar .nav-item .dropdown-menu{ display: none; }
+	        .navbar .nav-item:hover .nav-link{   }
+	        .navbar .nav-item:hover .dropdown-menu{ display: block; }
+	        .navbar .nav-item .dropdown-menu{ margin-top:0; }
+        }
+    </style>
+
+	
+    <!-- /* ============ desktop view .end// ============ */ -->
+
 </head>
+<!-- Head section  -->
+
 <body>
 <!-- Navbar section -->
-<nav class="navbar navbar-expand-lg ps-xxl-5 pe-lg-5 shadow-sm bg-body rounded pt-0 pb-0"
-     style="background-color: #ffffff;">
-    <div class="container-fluid ps-xl-5 pe-xl-5 ">
-        <a class="navbar-brand ms-xxl-5" href="index.html">
-            <img src="asset/img/aaa-logo.png"
-                 width="81px" class="img-fluid ms-xxl-5" alt="logo"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<nav class="navbar navbar-expand-lg ps-lg-5 pe-lg-5 shadow-sm bg-body rounded" style="background-color: #ffffff;">
+  <div class="container-fluid ps-xl-5 pe-xl-5 ">
+    <a class="navbar-brand ms-xxl-5" href="index.html">
+      <img src="asset/img/aaa-logo.png"
+        width="81px" class="img-fluid ms-xxl-5" alt="logo"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--      Update Bold each Selected menu      -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item ms-3">
+          <a class="nav-link fs-6" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link fs-6" href="program.html">Program</a>
+        </li>
+        <li class="nav-item ms-3">
+          <a class="nav-link fs-6" href="gallery.html">Gallery</a>
+        </li>
 
-        <!--      Update Bold each Selected menu      -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item ms-3">
-                    <a class="nav-link fs-6" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ms-3">
-                    <a class="nav-link fs-6" href="program.html">Program</a>
-                </li>
-                <li class="nav-item ms-3">
-                    <a class="nav-link fs-6" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item dropdown ms-3">
-                    <a class="nav-link fs-6" href="location.html">Location</a>
-                </li>
-            </ul>
-        </div>
+        <!-- About dropdown hover section  -->
+        <!-- <li class="nav-item dropdown ms-3">
+          <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="about.html">About Us</a>
+        </li> -->
+        <li class="nav-item dropdown ms-3">
+        <a class="nav-link  dropdown-toggle fs-6 active fw-bolder ms-3" href="about.html" data-bs-toggle="dropdown" aria-current="page">  About Us  </a>
+		    <ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="#president"> President Message </a></li>
+			  <li><a class="dropdown-item" href="#vission&mission"> Mission & Vision </a></li>
+			  <li><a class="dropdown-item" href="#Partnership"> Our Partner </a></li>
+        <li><a class="dropdown-item" href="#managementteam"> Management Team </a></li>
+		    </ul>
+		</li></li>
+
+
+
+        <!-- End here  -->
+        <li class="nav-item dropdown ms-3">
+          <a class="nav-link fs-6" href="location.html">Location</a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
 <!-- Navigation section exit -->
 
@@ -132,16 +161,18 @@
                 <li> Innovation and entrepreneurship for better academic and society services</li>
             </ul>
 
-            <!-- <button type="button" class="text-start btn btn-success p-1 mt-2 mb-2 fs-6" style="color: #ffffff">READ MORE</button> -->
-            <a href="https://www.facebook.com/authenticadvancedacademy" class="btn btn-primary" role="button"
-               data-bs-toggle="button">READ MORE</a>
-
-        </div>
-
-
+      <!-- <button type="button" class="text-start btn btn-success p-1 mt-2 mb-2 fs-6" style="color: #ffffff">READ MORE</button> -->
+      <a href="about_subpage.html" class="btn btn-success">READ MORE</a>        
     </div>
-</section>
-<!-- End section 2 ( PRESIDENT message) -->
+      
+  
+  
+  </div>
+
+
+
+  </section></header>
+  <!-- End section 2 ( PRESIDENT message) -->
 
 <!-- section 3 Mission and Vision  -->
 
@@ -189,7 +220,6 @@ class="text-center mb-5">
                 <img src="asset/img/SMART.png">
               </span>
             </a>
-
 
             <!-- First in DOM, order -->
         </div>
