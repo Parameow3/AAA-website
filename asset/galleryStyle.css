@@ -1,0 +1,262 @@
+
+  ::selection{
+	color: #fff;
+	background: #007bff;
+  }
+  .wrapper{
+	margin: 100px auto;
+	max-width: 1100px;
+  }
+  .wrapper nav{
+	display: flex;
+	justify-content: center;
+  }
+  .wrapper .items{
+	display: flex;
+	max-width: 720px;
+	width: 100%;
+	justify-content: space-between;
+  }
+  .items span{
+	padding: 7px 25px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	color: #fff;
+	background-color: #059652;
+	border-radius: 50px;
+	border: 2px solid #059652;
+	transition: all 0.3s ease;
+  }
+  .items span.active,
+  .items span:hover{
+	color: #fff;
+	border: 2px solid #E2931D;
+	background: #E2931D;
+  }
+  .gallery{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+  }
+  .gallery .image{
+	width: calc(100% / 4);
+	padding: 7px;
+  }
+  .gallery .image span{
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+  }
+  .gallery .image img{
+	width: 100%;
+	vertical-align: middle;
+	transition: all 0.3s ease;
+  }
+  .gallery .image:hover img{
+	transform: scale(1.1);
+  }
+  .gallery .image.hide{
+	display: none;
+  }
+  .gallery .image.show{
+	animation: animate 0.4s ease;
+  }
+  @keyframes animate {
+	0%{
+	  transform: scale(0.5);
+	}
+	100%{
+	  transform: scale(1);
+	}
+  }
+  .preview-box{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.9);
+	background: #fff;
+	max-width: 700px;
+	width: 100%;
+	z-index: 5;
+	opacity: 0;
+	pointer-events: none;
+	border-radius: 3px;
+	padding: 0 5px 5px 5px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  }
+  .preview-box.show{
+	opacity: 1;
+	pointer-events: auto;
+	transform: translate(-50%, -50%) scale(1);
+	transition: all 0.3s ease;
+  }
+  .preview-box .details{
+	padding: 13px 15px 13px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .details .title{
+	display: flex;
+	font-size: 18px;
+	font-weight: 400;
+  }
+  .details .title p{
+	font-weight: 500;
+	margin-left: 5px;
+  }
+  .details .icon{
+	color: #007bff;
+	font-style: 22px;
+	cursor: pointer;
+  }
+  .preview-box .image-box{
+	width: 100%;
+	display: flex;
+  }
+  .image-box img{
+	width: 100%;
+	border-radius: 0 0 3px 3px;
+  }
+  .shadow{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	display: none;
+	background: rgba(0,0,0,0.4);
+  }
+  .shadow.show{
+	display: block;
+  }
+  @media (max-width: 1000px) {
+	.gallery .image{
+	  width: calc(100% / 3);
+	}
+  }
+  @media (max-width: 800px) {
+	.gallery .image{
+	  width: calc(100% / 2);
+	}
+  }
+  @media (max-width: 700px) {
+	.wrapper nav .items{
+	  max-width: 600px;
+	}
+	nav .items span{
+	  padding: 7px 15px;
+	}
+  }
+  @media (max-width: 600px) {
+	.wrapper{
+	  margin: 30px auto;
+	}
+	.wrapper nav .items{
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+	nav .items span{
+	  margin: 5px;
+	}
+	.gallery .image{
+	  width: 100%;
+	}
+  }
+
+/* @media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+	
+.omb_login .omb_socialButtons a {
+	color: white; 
+	opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;    	
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}			
+
+.omb_login .omb_loginForm .input-group.i {
+	width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+	
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}		
+}
+
+
+
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item img{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+.portfolio-item .item{
+	float:left;
+	margin-bottom:10px;
+}
+ */
