@@ -21,6 +21,10 @@
     <link rel="stylesheet" type="text/css" href="asset/style.css">
     <script src="asset/index.js"></script>
 
+    <!-- Scroll Animation Library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-- /* ============ desktop view ============ */ -->
     <style>
         @media all and (min-width: 992px) {
@@ -48,6 +52,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!--      Update Bold each Selected menu      -->
+
+    
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item ms-3">
@@ -60,21 +66,22 @@
           <a class="nav-link fs-6" href="gallery.html">Gallery</a>
         </li>
 
-        <!-- About dropdown hover section  -->
-        <!-- <li class="nav-item dropdown ms-3">
-          <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="about.html">About Us</a>
-        </li> -->
+       <!-- About dropdown hover section  --> 
+
         <li class="nav-item dropdown ms-3">
-        <a class="nav-link  dropdown-toggle fs-6 active fw-bolder" href="about.html" data-bs-toggle="dropdown" aria-current="page">  About Us  </a>
-		    <ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="#president"> President Message </a></li>
-			  <li><a class="dropdown-item" href="#vission&mission"> Mission & Vision </a></li>
-			  <li><a class="dropdown-item" href="#Partnership"> Our Partner </a></li>
-        <li><a class="dropdown-item" href="#managementteam"> Management Team </a></li>
-		    </ul>
-		</li></li>
-
-
+            <a class="nav-link dropdown-toggle fs-6 show" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">About</a>
+            <ul class="dropdown-menu show" data-bs-popper="static">
+                <li><a class="dropdown-item fw-bold" href="about.html">About</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#president">President Message</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#vission&mission">Mission & Vision</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#Partnership">Our Partner</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="#managementteam">Management Team</a></li>
+            </ul>
+        </li>
 
         <!-- End here  -->
         <li class="nav-item dropdown ms-3">
@@ -83,7 +90,25 @@
       </ul>
     </div>
   </div>
-</nav>
+ </nav> 
+
+<!-- <nav>
+<li class="nav-item dropdown ms-3">
+    <a class="nav-link dropdown-toggle fs-6 show" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">About</a>
+    <ul class="dropdown-menu show" data-bs-popper="static">
+        <li><a class="dropdown-item fw-bold" href="about.html">ABOUT </a></li>
+        <hr class="dropdown-divider">
+        <li><a class="dropdown-item" href="#">Department of Sport</a></li>
+        <hr class="dropdown-divider">
+        <li><a class="dropdown-item" href="#">Department of Dance</a></li>
+        <hr class="dropdown-divider">
+        <li><a class="dropdown-item" href="program.html">Department of Robotic</a></li>
+        <hr class="dropdown-divider">
+        <li><a class="dropdown-item" href="#">Department of Language</a></li>
+    </ul>
+</li>
+</nav> -->
+
 <!-- Navigation section exit -->
 
 <!--  Contents  -->
@@ -133,18 +158,32 @@
 
 <!-- This section about PRESIDENT message  -->
 
-<section id="president">
-    <div class="row text-center align-items-center justify-content-center p-xl-5 p-2 pb-5 mx-0 mb-5"
-         style="background-image: url(asset/img/BACKGROUND.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+
+
+<section id="president" >
+
+    <!-- Animaton scroll div  -->
+    <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000"
+            class="row text-center align-items-center justify-content-center p-2 px-0 mx-0 mt-5">
+
+
+    <div class="row text-center align-items-center justify-content-center p-xl-5 p-2 pb-5 mx-0 mb-5 " 
+         style="background-image: url(asset/img/BACKGROUND.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
+         >
         <!-- Image  -->
-        <div class="col-md-5 text-center p-md-2 mt-5">
+        <div class="col-md-5 text-center p-md-2 mt-5" 
+
+        >
+
             <img src="asset/img/PIC'spresident.png"
                  class="rounded-3 w-100"
                  style="height: 512px; object-fit: cover">
         </div>
 
         <!-- Description -->
-        <div class="col-md-5 text-sm-start mt-3 ms-2">
+        <div class="col-md-5 text-sm-start mt-3 ms-2"
+        
+        >
             <p style="color: #FFFFFF;" class="fs-5 text-start"> MEET OUR PRESIDENT</p>
             <p class="text-start " style="color: #FFFFFF"> I am delighted to welcome you to the Authentic Advanced
                 Academy (AAA).</p>
@@ -158,14 +197,13 @@
                 <li> Research and advancement of knowledge</li>
                 <li> Innovation and entrepreneurship for better academic and society services</li>
             </ul>
-
-      <!-- <button type="button" class="text-start btn btn-success p-1 mt-2 mb-2 fs-6" style="color: #ffffff">READ MORE</button> -->
-      <a href="about_subpage.html" class="btn btn-success">READ MORE</a>        
+      <a href="readmore_about.html" class="btn btn-success">READ MORE</a>        
     </div>
       
   
   
   </div>
+</div>
 
 
 
@@ -175,25 +213,21 @@
 <!-- section 3 Mission and Vision  -->
 
 <section id="vission&mission"
-class="text-center mb-5">
-    <div class="row text-center mx-0">
-        <div class="col text-center p-3 ms-5 me-5">
-            <h1 class="text-center fw-bold"> Mission </h1>
 
+class="text-center mb-5">
+<div data-aos="zoom-in-right" data-aos-anchor-placement="top-center" data-aos-duration="2000"
+            class="row text-center align-items-center justify-content-center p-2 px-0 mx-0 mt-5">
+    <div class="row text-center mx-0">
+        <div class="col text-center p-3 ms-5 me-5" >
+            <h1 class="text-center fw-bold"> Mission </h1>
             <img src="asset/img/mission.png" alt="mission">
             <br><br>
             <p class="text-center ">To provide education, training, R&D and promote innovation on digital technology
                 to students, civil servants, and innovators to contribute to the development of digital government,
                 economy and society. </p>
-
         </div>
-
-
         <div class="d-none d-sm-block vr px-0 mt-3 mb-3 px-0 mx-0" style="width: 2px;"></div>
-
-
         <div class="col text-center p-3 ms-5 me-5">
-
             <h1 class="text-center fw-bold"> Vision </h1>
             <img src="asset/img/vision.png" alt="vision">
             <br><br>
@@ -202,14 +236,21 @@ class="text-center mb-5">
         </div>
     </div>
 
-    <button class="btn btn-primary" type="button">Learn More</button>
+    <!-- Closing div for the fade scroll animation  -->
+</div> 
+
+    <a href="learnmore_about.html" class="btn btn-success">LEARN MORE</a>
 </section>
+
 <!-- End section 3 ( Mission & Vision) -->
 <hr>
 <!-- Section 4 (Partnership)  -->
 
 <section id="Partnership"
          class="container-fluid text-center px-0 mx-0 mt-5 mb-5">
+         <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000"
+            class="row text-center align-items-center justify-content-center p-2 px-0 mx-0 mt-5">
+
     <div class="row text-center align-items-center justify-content-center p-xl-5 m-2 mb-0">
         <h1>Our Partner</h1>
         <div class="col ">
@@ -264,16 +305,26 @@ class="text-center mb-5">
             </a>
         </div>
     </div>
-    <button class="btn btn-success mt-5" type="button">VIEW ALL</button>
+    </div>
+    <a href="viewall_about.html" class="btn btn-success">VIEW ALL</a>    
+    
+
 </section>
 <!-- end Partner section -->
 <hr>
 <!-- start the managementteam section here  -->
 
 <section id="managementteam">
+
+    
+
     <div class="container-fluid mt-5 text-center mx-0 mb-5">
         <h1 class="fw-bold"> Management Team</h1>
         <div class="row gy-5 text-center align-items-center justify-content-center mx-0 mt-2">
+
+            <!-- Animation scroll for profile  -->
+            <div data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-duration="3000"
+            class="row text-center align-items-center justify-content-center p-2 px-0 mx-0 mt-5">
 
             <div class="col-md-4 text-center">
                 <div class="card">
@@ -288,13 +339,16 @@ class="text-center mb-5">
                                 define product roll-out strategy, track progress against goals, and manage execution
                                 projects. At DEF Bank, delivered a $20M, four-year project modernizing back-end
                                 functionalities that saved over $200M on international transactions yearly.</p>
-                            <a href="#" class="btn btn-primary">GitHub</a>
+                            <a href="https://github.com/ChantolaKhieu" class="btn btn-primary">GitHub</a>
                         </order>
                     </div>
                 </div>
             </div>
 
             <!-- another profile  -->
+
+            
+
 
             <div class="col-md-4 text-center">
                 <div class="card">
@@ -314,6 +368,7 @@ class="text-center mb-5">
                     </div>
                 </div>
             </div>
+            
 
 
             <!-- another profile  -->
@@ -352,7 +407,7 @@ class="text-center mb-5">
                                 define product roll-out strategy, track progress against goals, and manage execution
                                 projects. At DEF Bank, delivered a $20M, four-year project modernizing back-end
                                 functionalities that saved over $200M on international transactions yearly.</p>
-                            <a href="#" class="btn btn-primary">GitHub</a>
+                            <a href="https://github.com/PhallyBou" class="btn btn-primary">GitHub</a>
                         </order>
                     </div>
                 </div>
@@ -360,8 +415,146 @@ class="text-center mb-5">
         </div>
     </div>
 
+</div>
+
 
 </section>
+<!--  FOOTER  -->
+<div class="mt-0 pt-0"
+     style="background-color: #303F4F; background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <footer class="container p-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+            <div class="col mb-3">
+                <a href="index.html" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <img src="asset/img/aaa-logo.png" width="128">
+                </a>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="text-white">Home</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Branch Near
+                        You</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Taekwondo</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Robotic</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Dancing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Language</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="text-white">Program</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                        Sport</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                        Robotic</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                        Dance</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                        Language</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="text-white">Gallery</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Robotic
+                        Class</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Dancing
+                        Class</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Taekwondo
+                        Class</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Language
+                        Class</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5 class="text-white">About</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Location</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Contact Us</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Partner</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Blogs</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p class="text-white-50">&copy; 2023 Authentic Advanced Academy, Inc. All rights reserved.</p>
+
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-underline-light text-white-50" href="#">
+                    Privacy Policy
+                </a></li>
+                <li class="ms-3"><a class="link-underline-light text-white-50" href="#">
+                    Terms & Conditions
+                </a></li>
+            </ul>
+
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="text-white-50" href="https://www.facebook.com/authenticadvancedacademy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                         class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a></li>
+
+                <li class="ms-3"><a class="text-white-50" href="https://t.me/bunchhayloykoplu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                         class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg>
+                </a></li>
+
+                <li class="ms-3"><a class="text-white-50" href="mailto:aaaschool.kh@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                         class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                </a></li>
+
+                <li class="ms-3"><a class="text-white-50" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                         class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a></li>
+
+                <li class="ms-3"><a class="text-white-50"
+                                    href="https://www.youtube.com/channel/UCE3oNkdyUrcKkqzn0CkSD0w">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                         class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<!--  End Footer  -->
+
+
+<!--  Script Include  -->
+    <!-- Bootstrap JS -->
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <!--  custom JS  -->
+    <script src="asset/index.js"></script>
+    <!-- Here we hook our AOS JS file  -->
+    <script src="asset/aos-master/dist/aos.js"></script>
+    <!-- Activate AOS Library -->
+    <script>
+        AOS.init();
+    </script>
+
 
 
 </body>
