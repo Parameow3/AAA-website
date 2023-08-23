@@ -63,7 +63,7 @@ section {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0ms !important;
   }
 }
 
@@ -85,16 +85,10 @@ section {
 }
 
 .home h2 {
-  font-size: 64px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
-  font-family: var(--font-primary);
 }
 
-.home h2 span {
-  color: var(--color-primary);
-}
 
 .home .btn-book-a-table {
   font-weight: 500;
@@ -129,10 +123,8 @@ section {
 }
 
 .about-us .icon-box i {
-  color: var(--color-primary);
   margin-bottom: 30px;
   font-size: 32px;
-  margin-bottom: 30px;
   background: rgba(90, 70, 70, 0.1);
   border-radius: 50px;
   display: flex;
@@ -165,20 +157,30 @@ section {
   padding: 80px 0;
 }
 
-.dropdown-item:hover{
-    background:#E2931D;
-
+.program {
+    font-family: 'Monomaniac One';
+    font-size: 48px;
+    color: #000000;
 }
 
-#depRobotic{
-  font-family: 'Monomaniac One';
-  font-size: 48px;
-  color: #000;
+.detail {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
 }
 
-#detail{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  color:black;
+.program-class {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.detail-class {
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
 }

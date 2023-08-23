@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,6 +57,9 @@
             .frame-h {
                 height: 27em;
             }
+            .dropdown-item:hover{
+                background:#E2931D;
+            }
         }
     </style>
     <!-- /* ============ desktop view .end// ============ */ -->
@@ -76,9 +79,11 @@
         <!--      Update Bold each Selected menu      -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav me-3">
+                <!--       HOME        -->
                 <li class="nav-item ms-3">
                     <a class="nav-link active fw-bolder fs-6" href="/" aria-current="page">Home</a>
                 </li>
+                <!--       PROGRAM        -->
                 <li class="nav-item dropdown ms-3">
                     <a class="nav-link dropdown-toggle fs-6" href="#" role="button"
                        data-bs-toggle="dropdown"
@@ -90,21 +95,19 @@
                         <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="#">Department of Dance</a></li>
                         <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="program.html">Department of Robotic</a></li>
+                        <li><a class="dropdown-item" href="program_robotic.html">Department of Robotic</a></li>
                         <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="#">Department of Language</a></li>
                     </ul>
                 </li>
+                <!--       GALLERY       -->
                 <li class="nav-item ms-3">
                     <a class="nav-link fs-6" href="gallery.html">Gallery</a>
                 </li>
 
-                <!-- About dropdown hover section  -->
-                <!-- <li class="nav-item dropdown ms-3">
-                  <a class="nav-link fs-6 active fw-bolder" aria-current="page" href="about.html">About Us</a>
-                </li> -->
+                <!--       ABOUT        -->
                 <li class="nav-item dropdown ms-3">
-                    <a class="nav-link dropdown-toggle fw-bold fs-6 show" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle fs-6 show" href="#" role="button" data-bs-toggle="dropdown"
                        aria-expanded="true">About</a>
                     <ul class="dropdown-menu show" data-bs-popper="static">
                         <li><a class="dropdown-item fw-bold" href="about.html">About</a></li>
@@ -119,7 +122,7 @@
                     </ul>
                 </li>
 
-                <!-- End here  -->
+                <!--       LOCATION        -->
                 <li class=" nav-item dropdown ms-3">
                     <a class="nav-link dropdown-toggle fs-6"
                        href="location.html"
