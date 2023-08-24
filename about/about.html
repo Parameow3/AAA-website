@@ -13,16 +13,14 @@
 
     <!--  Bootstrap  -->
     <link rel="stylesheet" type="text/css" href="../asset/css/bootstrap.min.css">
-    <script src="../asset/js/bootstrap.bundle.min.js"></script>
     <link href="../asset/bootstrap-icons-1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
 
     <!--  custom CSS and JS  -->
     <link rel="stylesheet" type="text/css" href="../asset/about.css">
     <link rel="stylesheet" type="text/css" href="../asset/style.css">
-    <script src="../asset/index.js"></script>
 
     <!-- Scroll Animation Library  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../asset/aos-master/dist/aos.css">
 
 
     <!-- /* ============ desktop view ============ */ -->
@@ -41,6 +39,13 @@
 
             .navbar .nav-item .dropdown-menu {
                 margin-top: 0;
+            }
+
+            .frame-h {
+                height: 27em;
+            }
+            .dropdown-item:hover{
+                background:#E2931D;
             }
         }
     </style>
@@ -80,7 +85,7 @@
                         <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="#">Department of Dance</a></li>
                         <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="../program/program.html">Department of Robotic</a></li>
+                        <li><a class="dropdown-item" href="../program/program_robotic.html">Department of Robotic</a></li>
                         <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="#">Department of Language</a></li>
                     </ul>
@@ -89,13 +94,13 @@
                     <a class="nav-link fs-6" href="../gallery.html">Gallery</a>
                 </li>
 
-                <!-- About dropdown hover section  -->
+                <!-- About Us dropdown hover section  -->
 
                 <li class="nav-item dropdown ms-3">
                     <a class="nav-link dropdown-toggle fw-bold fs-6 show" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="true">About</a>
+                       aria-expanded="true">About Us</a>
                     <ul class="dropdown-menu show" data-bs-popper="static">
-                        <li><a class="dropdown-item fw-bold" href="about.html">About</a></li>
+                        <li><a class="dropdown-item fw-bold" href="about.html">About Us</a></li>
                         <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="readmore_about.html">President Message</a></li>
                         <hr class="dropdown-divider">
@@ -184,28 +189,21 @@
 <section id="president">
 
     <!-- Animaton scroll div  -->
-    <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000"
-         class="row text-center align-items-center justify-content-center px-0 mx-0">
-
-
-        <div class="row text-center align-items-center justify-content-center p-xl-5 p-2 pb-5 mx-0 mb-5 "
-             style="background-image: url(BACKGROUND.png); background-position: center; background-repeat: no-repeat; background-size: cover;"
-        >
+    <div class="row text-center align-items-center justify-content-center px-0 mx-0"
+         style="background-image: url(../asset/img/BACKGROUND.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000"
+             class="row text-center align-items-center justify-content-center p-xl-5 p-2 pb-5 mx-0 mb-5 ">
             <!-- Image  -->
-            <div class="col-md-5 text-center p-md-2 mt-5"
-
-            >
+            <div class="col-md-5 text-center p-md-2 mt-5">
 
                 <img src="../asset/img/PIC'spresident.png"
                      class="rounded-3 w-100"
-                     style="height: 512px; object-fit: cover">
+                     style="height: 555px; object-fit: cover">
             </div>
 
             <!-- Description -->
-            <div class="col-md-5 text-sm-start mt-3 ms-2"
-
-            >
-                <p style="color: #FFFFFF;" class="fs-5 text-start"> MEET OUR PRESIDENT</p>
+            <div class="col-md-5 text-sm-start mt-3 ms-2">
+                <h2 style="color: #FFFFFF;" class=" text-start"> MEET OUR PRESIDENT</h2>
                 <p class="text-start " style="color: #FFFFFF"> I am delighted to welcome you to the Authentic Advanced
                     Academy (AAA).</p>
 
@@ -346,55 +344,64 @@
             </div>
 
             <div class="col mb-3">
-                <h5 class="text-white">Home</h5>
+                <h5 class="text-white"><a class="nav-link" href="../index.html">Home</a></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Branch Near
+                    <li class="nav-item mb-2"><a href="../location/location.html" class="nav-link p-0 text-muted text-white-50">Branch
+                        Near
                         You</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Taekwondo</a>
+                    <li class="nav-item mb-2"><a href="#program/program.html" class="nav-link p-0 text-muted text-white-50">Taekwondo</a>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Robotic</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Dancing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Language</a>
+                    <li class="nav-item mb-2"><a href="../program/program_robotic.html" class="nav-link p-0 text-muted text-white-50">Robotic</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#program/program.html" class="nav-link p-0 text-muted text-white-50">Dancing</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#program/program.html" class="nav-link p-0 text-muted text-white-50">Language</a>
                     </li>
                 </ul>
             </div>
 
             <div class="col mb-3">
-                <h5 class="text-white">Program</h5>
+                <h5 class="text-white"><a class="nav-link" href="../program/program.html">Program</a></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                    <li class="nav-item mb-2"><a href="#program/program.html" class="nav-link p-0 text-muted text-white-50">Department
+                        of
                         Sport</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                    <li class="nav-item mb-2"><a href="../program/program_robotic.html" class="nav-link p-0 text-muted text-white-50">Department
+                        of
                         Robotic</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                    <li class="nav-item mb-2"><a href="#program/program.html" class="nav-link p-0 text-muted text-white-50">Department
+                        of
                         Dance</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Department of
+                    <li class="nav-item mb-2"><a href="#program/program.html" class="nav-link p-0 text-muted text-white-50">Department
+                        of
                         Language</a></li>
                 </ul>
             </div>
 
             <div class="col mb-3">
-                <h5 class="text-white">Gallery</h5>
+                <h5 class="text-white"><a class="nav-link" href="../gallery.html">Gallery</a></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Robotic
+                    <li class="nav-item mb-2"><a href="../gallery.html" class="nav-link p-0 text-muted text-white-50">Robotic
                         Class</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Dancing
+                    <li class="nav-item mb-2"><a href="../gallery.html" class="nav-link p-0 text-muted text-white-50">Dancing
                         Class</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Taekwondo
+                    <li class="nav-item mb-2"><a href="../gallery.html" class="nav-link p-0 text-muted text-white-50">Taekwondo
                         Class</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Language
+                    <li class="nav-item mb-2"><a href="../gallery.html" class="nav-link p-0 text-muted text-white-50">Language
                         Class</a></li>
                 </ul>
             </div>
 
             <div class="col mb-3">
-                <h5 class="text-white">About</h5>
+                <h5 class="text-white"><a class="nav-link" href="../about/about.html">About Us</a></h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Location</a>
+                    <li class="nav-item mb-2"><a href="../location/location.html" class="nav-link p-0 text-muted text-white-50">Location</a>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Contact Us</a>
+                    <li class="nav-item mb-2"><a href="../location/location.html" class="nav-link p-0 text-muted text-white-50">Contact
+                        Us</a>
                     </li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Partner</a></li>
+                    <li class="nav-item mb-2"><a href="../about/about.html#Partnership"
+                                                 class="nav-link p-0 text-muted text-white-50">Partner</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted text-white-50">Blogs</a></li>
                 </ul>
             </div>
@@ -415,6 +422,7 @@
             </ul>
 
             <ul class="list-unstyled d-flex">
+                <!--       Facebook         -->
                 <li class="ms-3"><a class="text-white-50" href="https://www.facebook.com/authenticadvancedacademy">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                          class="bi bi-facebook" viewBox="0 0 16 16">
@@ -422,13 +430,15 @@
                     </svg>
                 </a></li>
 
-                <li class="ms-3"><a class="text-white-50" href="https://t.me/bunchhayloykoplu">
+                <!--        Telegram        -->
+                <li class="ms-3"><a class="text-white-50" href="https://t.me/+85516669229">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                          class="bi bi-telegram" viewBox="0 0 16 16">
                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
                     </svg>
                 </a></li>
 
+                <!--       email         -->
                 <li class="ms-3"><a class="text-white-50" href="mailto:aaaschool.kh@gmail.com">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                          class="bi bi-envelope-fill" viewBox="0 0 16 16">
@@ -436,6 +446,7 @@
                     </svg>
                 </a></li>
 
+                <!--       Twitter         -->
                 <li class="ms-3"><a class="text-white-50" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                          class="bi bi-twitter" viewBox="0 0 16 16">
@@ -443,6 +454,7 @@
                     </svg>
                 </a></li>
 
+                <!--       Youtube         -->
                 <li class="ms-3"><a class="text-white-50"
                                     href="https://www.youtube.com/channel/UCE3oNkdyUrcKkqzn0CkSD0w">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
