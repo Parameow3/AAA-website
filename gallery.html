@@ -162,13 +162,15 @@
                      alt="Wild Landscape"/>
             </div>
 
-            <div class="carousel-caption top-0 bottom-0 start-0 end-0 bg-black bg-opacity-50 align-text-bottom">
-                <h1 class="mt-5 align-text-bottom" style="font-size: 69px; font-weight: 800; text-align: bottom;">
-                    Gallery
-                </h1>
-                <p class="pt-2 align-text-bottom" style="font-size: 16px; font-weight: 400;">
-                    Home > Gallery
-                </p>
+            <div class="carousel-caption top-0 bottom-0 start-0 end-0 bg-black bg-opacity-50 align-text-bottom align-bottom pt-5">
+                <div class="h-100 pt-5">
+                    <h1 class="pt-5 mt-5 align-text-bottom" style="font-size: 69px; font-weight: 800;">
+                        Gallery
+                    </h1>
+                    <p class="pt-2 align-text-bottom" style="font-size: 16px; font-weight: 400;">
+                        Home > Gallery
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -178,33 +180,180 @@
 <section>
     <div class="wrapper">
         <!-- filter Items -->
-        <nav>
-            <div class="items">
-                <span class="item active" data-name="all">All</span>
-                <span class="item" data-name="sport">Sport</span>
-                <span class="item" data-name="dance">Dancing</span>
-                <span class="item" data-name="robotic">Robotic</span>
-                <span class="item" data-name="event">Event</span>
-                <span class="item" data-name="achievement">Achievement</span>
-            </div>
+        <nav class="m-3">
+            <ul class="nav nav-pills border rounded-3 text-center align-items-center justify-content-center" id="pills-tab" role="tablist">
+                <!--       Dropdown All         -->
+                <li class="nav-item dropdown border" role="presentation">
+                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" >ALL</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item active" id="pills-all23-tab" data-bs-toggle="pill" data-bs-target="#pills-all2023" type="button" role="tab" aria-controls="pills-all2023" aria-selected="true" href="#pills-all2023">2023</a></li>
+                        <li><a class="dropdown-item" id="pills-all22-tab" data-bs-toggle="pill" data-bs-target="#pills-all2022" type="button" role="tab" aria-controls="pills-all2022" aria-selected="false" href="#pills-all2022">2022</a></li>
+                    </ul>
+                </li>
+                <!--       Sport Tab         -->
+                <li class="nav-item border" role="presentation">
+                    <button class="nav-link" id="pills-sport-tab" data-bs-toggle="pill" data-bs-target="#pills-sport" type="button" role="tab" aria-controls="pills-sport" aria-selected="false">SPORT</button>
+                </li>
+                <!--       Dancing Tab         -->
+                <li class="nav-item border" role="presentation">
+                    <button class="nav-link" id="pills-dancing-tab" data-bs-toggle="pill" data-bs-target="#pills-dance" type="button" role="tab" aria-controls="pills-dance" aria-selected="false">DANCING</button>
+                </li>
+                <!--       Robotics Tab         -->
+                <li class="nav-item border" role="presentation">
+                    <button class="nav-link" id="pills-robotics-tab" data-bs-toggle="pill" data-bs-target="#pills-robotic" type="button" role="tab" aria-controls="pills-robotic" aria-selected="false">ROBOTICS</button>
+                </li>
+                <!--       Event Tab         -->
+                <li class="nav-item border" role="presentation">
+                    <button class="nav-link" id="pills-event-tab" data-bs-toggle="pill" data-bs-target="#pills-event" type="button" role="tab" aria-controls="pills-event" aria-selected="false">EVENTS</button>
+                </li>
+                <!--       Achievement Tab         -->
+                <li class="nav-item border" role="presentation">
+                    <button class="nav-link" id="pills-achieve-tab" data-bs-toggle="pill" data-bs-target="#pills-achievement" type="button" role="tab" aria-controls="pills-achievement" aria-selected="false">ACHIEVEMENTS</button>
+                </li>
+            </ul>
         </nav>
         <!-- filter Images -->
-        <div class="gallery">
-            <div class="image"><span><img src="asset/img/robotic.JPG" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/prayer.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/1.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/2.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/3.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/4.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/5.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/6.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/7.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/8.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/9.jpg" alt=""></span></div>
-            <div class="image"><span><img src="asset/img/10.jpg" alt=""></span></div>
-            <div class="image"><span><img src="images/img-6.jpg" alt=""></span></div>
+        <div  class="tab-content" id="pills-tabContent">
+            <!--     ALL TABS       -->
+            <div class="tab-pane fade show active" id="pills-all2023" role="tabpanel" aria-labelledby="pills-all23-tab" tabindex="0">
+                <div class="gallery">
+                    <div class="image"><span><img src="asset/img/achievement/achievement01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement04.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event04.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/robotic.JPG" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/prayer.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/1.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/2.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet04.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo04.jpg" alt=""></span></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-all2022" role="tabpanel" aria-labelledby="pills-all22-tab" tabindex="0">
+                <div class="gallery">
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo09.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo10.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo11.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo12.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet06.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet07.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet08.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet09.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/7.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/8.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/9.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/10.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event10.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event11.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event12.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event13.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement11.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement12.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement13.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement14.jpg" alt=""></span></div>
+                </div>
+            </div>
+
+            <!--      SPORT TABS      -->
+            <div class="tab-pane fade" id="pills-sport" role="tabpanel" aria-labelledby="pills-sport-tab" tabindex="0">
+                <div class="gallery">
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo04.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo05.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo06.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo07.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo08.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo09.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo10.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo11.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/taekwondo/taekwondo12.jpg" alt=""></span></div>
+                </div>
+            </div>
+
+            <!--      DANCING TABS      -->
+            <div class="tab-pane fade" id="pills-dance" role="tabpanel" aria-labelledby="pills-dancing-tab" tabindex="0">
+                <div class="gallery">
+                    <div class="image"><span><img src="asset/img/ballet/ballet01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet04.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet05.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet06.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet07.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet08.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/ballet/ballet09.jpg" alt=""></span></div>
+                </div>
+            </div>
+
+            <!--      ROBOTICS TABS      -->
+            <div class="tab-pane fade" id="pills-robotic" role="tabpanel" aria-labelledby="pills-robotics-tab" tabindex="0">
+                <div class="gallery">
+                    <div class="image"><span><img src="asset/img/robotic.JPG" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/prayer.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/1.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/2.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/3.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/4.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/5.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/6.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/7.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/8.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/9.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/10.jpg" alt=""></span></div>
+                </div>
+            </div>
+
+            <!--      EVENT TABS      -->
+            <div class="tab-pane fade" id="pills-event" role="tabpanel" aria-labelledby="pills-event-tab" tabindex="0">
+                <div class="gallery">
+                    <div class="image"><span><img src="asset/img/event/event01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event04.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event05.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event06.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event07.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event08.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event09.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event10.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event11.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event12.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/event/event13.jpg" alt=""></span></div>
+                </div>
+            </div>
+
+            <!--      ACHIEVEMENTS TABS      -->
+            <div class="tab-pane fade" id="pills-achievement" role="tabpanel" aria-labelledby="pills-achieve-tab" tabindex="0">
+                <div class="gallery">
+                    <div class="image"><span><img src="asset/img/achievement/achievement01.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement02.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement03.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement04.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement05.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement06.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement07.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement08.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement09.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement10.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement11.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement12.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement13.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="asset/img/achievement/achievement14.jpg" alt=""></span></div>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
     <!-- fullscreen img preview box -->
     <div class="preview-box">
